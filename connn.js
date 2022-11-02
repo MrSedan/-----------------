@@ -13,6 +13,6 @@ con.connect(function(err){
     console.log("Connected!")
     con.query(`SELECT * FROM coupon;`, function(err, result){
         if (err) throw err;
-        console.log("Result: "+result)
+        console.log("Result: "+JSON.stringify(result))
     })
 })
